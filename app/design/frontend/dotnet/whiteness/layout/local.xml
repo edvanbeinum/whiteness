@@ -9,7 +9,7 @@
 -->
 <layout version="0.1.0">
 
-    <!--The 'default' Handle is called on (almost) every page. Here we remove the default css file and add our own CSS file -->
+    <!--The 'default' Handle is called on (almost) every page. Here we remove the default css file and add our own CSS file and the Twitter Bootstrap CSS framework -->
     <default>
         <!-- Modify contents of the head element -->
         <reference name="head">
@@ -20,6 +20,9 @@
             </action>
 
             <!-- Add our stylesheets -->
+            <action method="addCss">
+                <stylesheet>css/bootstrap.min.css</stylesheet>
+            </action>
             <action method="addCss">
                 <stylesheet>css/whiteness.css</stylesheet>
             </action>

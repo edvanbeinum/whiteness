@@ -1,0 +1,41 @@
+<?php
+/**
+ * WHITENESS - A Demo Magento Theme
+ * Written for .net Magazine November 2011
+ *
+ * http://github.com/edvanbeinum/whiteness
+ *
+ * @author Ed van Beinum <e@edvanbeinum.com>
+ */
+
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container">
+    <div class="header-panel">
+        <div class="switches"><?php echo $this->getChildHtml('switches') ?></div>
+        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
+        <?php echo $this->getChildHtml('accountLinks') ?>
+    </div>
+    
+    <!--    Add a row class for Twitter Bootstrap -->
+    <div class="header row">
+
+        <!-- Add span-two-thirds class for Twitter Bootstrap-->
+        <div class="branding span-two-thirds">
+            <!-- Change the name of our store -->
+            <h1><?php echo $this->__('Whiteness Store') ?></h1>
+            <?php echo $this->getChildHtml('headerCallout') ?>
+        </div>
+        <!-- Add span-one-third class for Twitter Bootstrap-->
+        <div class="quick-access span-one-third">
+            <div class="checkout-link"><?php echo $this->getChildHtml('checkoutLinks') ?></div>
+            <?php echo $this->getChildHtml('topCart') ?>
+            <?php echo $this->getChildHtml('topLinks') ?>
+            <?php echo $this->getChildHtml('topSearch') ?>
+        </div>
+    </div>
+    <?php echo $this->getChildHtml('topMenu') ?>
+    <?php echo $this->getChildHtml('topContainer') ?>
+</div>

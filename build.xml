@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project name="Whiteness Magento Theme" default="build" basedir=".">
+    <property file="build.default.properties"/>
+    <target name="build">
+        <copy todir="${deploy.dir}/app" overwrite="yes" verbose="yes">
+            <fileset dir="app">
+                <exclude name="**/.git"/>
+            </fileset>
+        </copy>
+        <copy todir="${deploy.dir}/skin" overwrite="yes" verbose="yes">
+            <fileset dir="skin">
+                <exclude name="**/.git"/>
+            </fileset>
+        </copy>
+    </target>
+</project>

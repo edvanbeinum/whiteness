@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+ WHITENESS - A Demo Magento Theme
+ Written for .net Magazine November 2011
+
+ http://github.com/edvanbeinum/whiteness
+
+ @author Ed van Beinum <e@edvanbeinum.com>
+-->
+<layout version="0.1.0">
+
+    <!--The 'default' Handle is called on (almost) every page. Here we remove the default css file and add our own CSS file -->
+    <default>
+        <!-- Modify contents of the head element -->
+        <reference name="head">
+            <!-- remove the default stylesheet -->
+            <action method="removeItem">
+                <type>skin_css</type>
+                <name>css/styles.css</name>
+            </action>
+
+            <!-- Add our stylesheets -->
+            <action method="addCss">
+                <stylesheet>css/whiteness.css</stylesheet>
+            </action>
+        </reference>
+    </default>
+</layout>

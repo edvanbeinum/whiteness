@@ -31,6 +31,14 @@
 
     <!-- This is the handle for the homepage -->
     <cms_index_index>
+        <!-- Reference the 'content' block -->
+        <reference name="content">
+            <!-- remove the CMS page from the homepage -->
+            <remove name="cms.wrapper"/>
+            <!-- Add products marked as NEW to the homepage -->
+            <block type="catalog/product_new" name="home.catalog.product.new" template="catalog/product/new.phtml"/>
+        </reference>        
+
         <!-- The righthand side bar -->
         <reference name="right">
             <!-- remove the Paypal logo in the 'right' structural block -->

@@ -1,0 +1,36 @@
+<?php
+/**
+ * WHITENESS - A Demo Magento Theme
+ * Written for .net Magazine November 2011
+ *
+ * http://github.com/edvanbeinum/whiteness
+ *
+ * @author Ed van Beinum <e@edvanbeinum.com>
+ */
+
+/**
+ * Top menu for store
+ *
+ * @see Mage_Catalog_Block_Navigation
+ */
+?>
+<?php
+/**
+ * $this->renderCategoriesMenuHtml() supports optional arguments:
+ * int Level number for list item class to start from
+ * string Extra class of outermost list items
+ * string If specified wraps children list in div with this class
+ */
+?>
+<?php $_menu = $this->renderCategoriesMenuHtml(0, 'level-top') ?>
+<?php if ($_menu): ?>
+
+<!-- Add Twitter Bootstrap markup for grid -->
+<div class="nav-container row">
+    <div class="span16">
+        <ul id="nav" class="tabs">
+            <?php echo $_menu ?>
+        </ul>
+    </div>
+</div>
+<?php endif ?>

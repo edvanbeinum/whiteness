@@ -175,3 +175,24 @@ ul#nav ul.level1 {
 }
 
 /* End Magento default Navigation rules */
+
+/* New Products on homepage */
+
+.new-product-row {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #DDD;
+}
+.new-product-row.first {
+    border:  none;
+    padding-top: 0;
+}
+ul.products-grid,
+ul.add-to-links {
+    list-style: none;
+    margin: 0;
+}
+
+ul.add-to-links li {
+    margin: 15px 0;
+}

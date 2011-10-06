@@ -22,14 +22,20 @@
 
 <!--Add a container class which Twitter Bootstrap uses -->
 <div class="container">
+
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
         <?php echo $this->getChildHtml('header') ?>
         <?php echo $this->getChildHtml('global_messages') ?>
         <?php echo $this->getChildHtml('breadcrumbsContainer') ?>
-        <div class="main-container col2-right-layout">
+        <!-- Add Twitter Bootstrap row class -->
+        <div class="main row col2-right-layout">
+            <!-- Add Twitter Bootstrap span-two-thirds class -->
+            <div class="col-main span-two-thirds">
                 <?php echo $this->getChildHtml('content') ?>
-            <div class="col-right"><?php echo $this->getChildHtml('right') ?></div>
+            </div>
+            <!-- Add Twitter Bootstrap span-one-third class -->
+            <div class="col-right sidebar span-one-third"><?php echo $this->getChildHtml('right') ?></div>
         </div>
         <?php echo $this->getChildHtml('footer_before') ?>
         <?php echo $this->getChildHtml('footer') ?>

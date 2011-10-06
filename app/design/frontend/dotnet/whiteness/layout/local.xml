@@ -41,8 +41,22 @@
 
         <!-- The righthand side bar -->
         <reference name="right">
+
+            <!-- Add the Static Block with the identifier 'news-sidebar'. We'll positioned BEFORE the recently viewed block -->
+            <block type="cms/block" name="news-sidebar" before="right.reports.product.viewed">
+                <action method="setBlockId">
+                    <block_id>news-sidebar</block_id>
+                </action>
+            </block>
+            
             <!-- remove the Paypal logo in the 'right' structural block -->
             <remove name="paypal.partner.right.logo"></remove>
+
+            <!-- remove other elements (compare, cart, callout and poll) from the right bar -->
+            <remove name="catalog.compare.sidebar"></remove>
+            <remove name="cart_sidebar"></remove>
+            <remove name="right.permanent.callout"></remove>
+            <remove name="right.poll"></remove>
         </reference>
     </cms_index_index>
 </layout>

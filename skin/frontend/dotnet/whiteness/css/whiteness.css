@@ -12,6 +12,10 @@ h1 {
     color: #f0f;
 }
 
+h2 {
+    margin: 15px 0;
+}
+
 /* Top right account links */
 .header-container ul.links {
     margin: 0;
@@ -195,4 +199,15 @@ ul.add-to-links {
 
 ul.add-to-links li {
     margin: 15px 0;
+}
+
+/* Right hand sidebar */
+
+.col-right .block-viewed {
+    border: solid 1px #E5E5E5;
+    padding: 10px;
+}
+
+.col-right .block-viewed .block-title {
+    margin-bottom: 10px;
 }

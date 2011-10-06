@@ -28,4 +28,13 @@
             </action>
         </reference>
     </default>
+
+    <!-- This is the handle for the homepage -->
+    <cms_index_index>
+        <!-- The righthand side bar -->
+        <reference name="right">
+            <!-- remove the Paypal logo in the 'right' structural block -->
+            <remove name="paypal.partner.right.logo"></remove>
+        </reference>
+    </cms_index_index>
 </layout>

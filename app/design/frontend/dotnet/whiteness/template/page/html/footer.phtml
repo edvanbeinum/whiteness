@@ -1,0 +1,26 @@
+<?php
+/**
+ * WHITENESS - A Demo Magento Theme
+ * Written for .net Magazine November 2011
+ *
+ * http://github.com/edvanbeinum/whiteness
+ *
+ * @author Ed van Beinum <e@edvanbeinum.com>
+ */
+
+/**
+ * @var Mage_Page_Block_Html_Footer $this
+ */
+?>
+<footer>
+	<!-- Add Twitter Bootstrap classes -->
+    <div class="footer row">
+        <div class="span-two-thirds">
+            <?php echo $this->getChildHtml() ?>
+        </div>
+        <div class="span-one-third">
+            <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
+            <address><?php echo $this->getCopyright() ?></address>
+        </div>
+    </div>
+</footer>

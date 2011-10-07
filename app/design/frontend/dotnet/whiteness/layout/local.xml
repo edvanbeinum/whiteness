@@ -58,5 +58,10 @@
             <remove name="right.permanent.callout"></remove>
             <remove name="right.poll"></remove>
         </reference>
+
+        <!-- Footer Stuctural Block, remove CMS static block called 'cms_footer_links' -->
+        <reference name="footer">
+            <remove name="cms_footer_links" />
+        </reference>
     </cms_index_index>
 </layout>

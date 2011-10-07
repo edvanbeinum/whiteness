@@ -211,3 +211,10 @@ ul.add-to-links li {
 .col-right .block-viewed .block-title {
     margin-bottom: 10px;
 }
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #ddd;
+    background-color: #eee;
+}
